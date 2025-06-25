@@ -19,8 +19,8 @@ foreach ($data as [$name, $subject, $score]) {
     $names[$name] = $name;
 }
 
-asort($subjects);
-asort($names);
+ksort($subjects);
+ksort($names);
 
 echo "<table border='1'><tr><td></td>";
 foreach ($subjects as $subject) echo "<td>$subject</td>";
